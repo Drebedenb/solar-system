@@ -60,11 +60,9 @@ scene.background = spaceTexture;
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
   sun.rotation.x += 0.01;
-  sun.rotation.y += 0.05;
-  sun.rotation.z += 0.05;
+
 
   mercury.rotation.x += 0.01;
-  mercury.rotation.y += 0.05;
 
   camera.position.z = t * -0.01;
   camera.position.y = t * -0.01;
